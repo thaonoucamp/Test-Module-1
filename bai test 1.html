@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function findMax(arrScoreTest)
+    {
+        if(arrScoreTest.length == 0)
+        {
+            alert('mang diem thi trong !');
+            return NaN;
+        }
+        let maxScore = arrScoreTest[0];
+        for(let i = 0; i < arrScoreTest.length; i++)
+        {
+            if(maxScore < arrScoreTest[i]) maxScore = arrScoreTest[i];
+        }
+        return maxScore;
+    }
+</script>
 </body>
 </html>

@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function isFibonacci(checkNumByFibo)
+    {
+        let num1 = 0, num2 = 1;
+        while(num1 <= checkNumByFibo)
+        {
+            if(num1 == checkNumByFibo) return true;
+            num2 = num1 + num2;
+            num1 = num2 - num1;
+        }
+        return false;
+    }
+</script>
 </body>
 </html>
