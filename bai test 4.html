@@ -16,12 +16,15 @@
         }
         render(canvas) {
             let ctx = canvas.getContext('2d');
-            // Tao duong cong kieu chu L (dang 2d)
+            // Tao duong cong kieu chu L (dang 2d);
             ctx.beginPath();
-            // Tao 2 duong dan
+            // Tao duong dan;
             ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+            // Tao 1 duong cong voi tham so la(x,y,radius,diem bat dau la 0, ket thuc la PI);
             ctx.fillStyle = this.color;
             ctx.fill();
+            // bat dau ve;
+
         }
     }
     let circle = new Circle(20,20,100,'#ff0000');
