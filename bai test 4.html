@@ -5,7 +5,7 @@
     <title>Circle</title>
 </head>
 <body>
-<canvas id="circle" style ="width:600px; height:300px; border:1px solid black"></canvas>
+<canvas id="myCanvas" style ="width:600px; height:300px; border:1px solid black"></canvas>
 <script>
     class Circle {
         constructor(x,y,radius,color) {
@@ -16,14 +16,16 @@
         }
         render(canvas) {
             let ctx = canvas.getContext('2d');
+            // Tao duong cong kieu chu L (dang 2d)
             ctx.beginPath();
+            // Tao 2 duong dan
             ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
             ctx.fillStyle = this.color;
             ctx.fill();
         }
     }
     let circle = new Circle(20,20,100,'#ff0000');
-    circle.render(document.getElementById('circle'));
+    circle.render(document.getElementById('myCanvas'));
 </script>
 </body>
 </html>
